@@ -18,12 +18,12 @@ const generateRandomNumber = () => {
     randomNumber += n;
   }
   return randomNumber;
-}
+};
 
 const getNumber = () => {
   console.log("\nВведите ваше число:");
   return readlineSync.question("-->  ");
-}
+};
 
 const compareNumbers = (number1, number2) => {
   bulls = 0;
@@ -36,14 +36,12 @@ const compareNumbers = (number1, number2) => {
       cows++;
     }
   }
-}
+};
 
 const play = () => {
   let number1 = generateRandomNumber();
 
-  if (sizeNumber === 3) {
-    console.log("Вам нужно угадать трехзначное число.");
-  } else if (sizeNumber === 4) {
+  if (sizeNumber === 4) {
     console.log("Вам нужно угадать четырехзначное число.");
   } else if (sizeNumber === 5) {
     console.log("Вам нужно угадать пятизначное число.");
@@ -68,7 +66,11 @@ const play = () => {
         "\n"
     );
   }
-}
+};
 
 play();
 
+
+// if (sizeNumber === 3) {
+//   console.log("Вам нужно угадать трехзначное число.");
+// } else
